@@ -1,0 +1,46 @@
+<html>
+<head>
+<title> Cart page </title>
+<body>
+<center>
+<table width="100%">
+<tr>
+<th>brand</th>
+<th> Price</th>
+<th>Quantity</th>
+<th> Amount</th>
+</tr>
+<tr>
+<td align="center">bts</td>
+<td align="center"> $40.5</td>
+<td align="center">01</td>
+<td align="center">$40.5</td>
+</tr>
+
+
+
+<tr>
+<td></td>
+<td></td>
+
+<th>Total Amount</th>
+<td align="center">$110.5</td>
+</tr>
+</table>
+</br><button onclick="myFunction()"><left>Proceed to payment</left></button>
+<p id="demo"></p>
+<script>
+function myFunction(){
+var txt;
+if (confirm("press a button!")){
+txt="secured by visa";
+}
+else{
+txt="You pressed Cancel!";
+}
+document.getElementById("demo").innerHTML=txt;
+}
+</script>
+
+</body>
+</html>

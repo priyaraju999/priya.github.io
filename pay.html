@@ -1,0 +1,43 @@
+<html>
+<body bgcolor="pink">
+<h2> Booking Details </h2>
+bank:<select >
+<option>SBI</option>
+<option>BOI</option>
+<option>HDFC</option>
+<option>OTHERS</option>
+</select>
+<p>
+
+card holder:<input type="text" value="enter name">
+<p>
+card number:<input type="number" value="enter no" onKeyPress="if(this.value.length==12) return false;" min="0">
+<p>
+card cvv no:<input type="password"   onKeyPress="if(this.value.length==3) return false;" min="0">
+<p>
+Payment type:<input type="checkbox" >Netbanking
+  <input type="checkbox" >card 
+  <input type="checkbox">  <a href="https://paytm.com/">paytm</a>
+<p>
+
+
+<h2>card type</h2>
+<ul class="breadcrumb">
+  <li><a >debit card</a></li>
+  <li><a>credit card</a></li>
+  <li><a >paytm card</a></li>
+  
+</ul>
+<input type="submit" value="confirm booking" onclick="pay();">
+<p id="aa"></p>
+<script language="javascript">
+function pay()
+    {
+
+window.open("C:\Users\Bhavya\Desktop\confirm.html")
+}
+
+</script>
+ <input type="button" value="Print"   onclick="window.print()" /> 
+</body>
+</html>
